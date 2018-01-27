@@ -48,6 +48,29 @@ class Products extends Component{
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor, tellus laoreet venenatis facilisis, enim ex faucibus nulla, id rutrum ligula purus sit amet mauris. ",
                 rating: 5,
                 numOfReviews: 2
+            }, {
+                imageUrl: "http://loremflickr.com/150/150?random=1",
+                productName: "Product 4",
+                releasedDate: "May 31, 2016",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor, tellus laoreet venenatis facilisis, enim ex faucibus nulla, id rutrum ligula purus sit amet mauris. ",
+                rating: 4,
+                numOfReviews: 2
+            },
+            {
+                imageUrl: "http://loremflickr.com/150/150?random=2",
+                productName: "Product 5",
+                releasedDate: "October 31, 2016",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor, tellus laoreet venenatis facilisis, enim ex faucibus nulla, id rutrum ligula purus sit amet mauris. ",
+                rating: 2,
+                numOfReviews: 12
+            },
+            {
+                imageUrl: "http://loremflickr.com/150/150?random=3",
+                productName: "Product 6",
+                releasedDate: "July 30, 2016",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor, tellus laoreet venenatis facilisis, enim ex faucibus nulla, id rutrum ligula purus sit amet mauris. ",
+                rating: 5,
+                numOfReviews: 2
             }];
     }
 
@@ -56,14 +79,29 @@ class Products extends Component{
         // const products = ["Learning React","Pro React","Beginning React","Angular"];
 
         const listProducts = this.populateList(this.products);
+        // const listProducts = [];
+        
+
+
+
         return(
             <div>
                 <h2>
                     Products
                 </h2>
+
+                { listProducts.length > 0 && 
                 <ul style={divStyle} >
                     {listProducts}
                 </ul>
+                }
+
+                {listProducts.length == 0 &&
+                    <ul style={divStyle} >
+                       <h3> No Products to display! </h3>
+                    </ul>
+                }
+
             </div>
         );
     }
@@ -72,6 +110,6 @@ class Products extends Component{
 export default Products;
 
 var divStyle = {
-    width:'50%',
+    width:'100%',
     margin:'auto'
 }

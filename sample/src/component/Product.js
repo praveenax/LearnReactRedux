@@ -3,9 +3,9 @@ import Rating from '../Rating';
 import {Media} from 'react-bootstrap';
 
 class Product extends Component{
-    constructor(props){
-        super(props);
-    }
+    // constructor(props){
+    //     super(props);
+    // }
 
     render(){
         return (

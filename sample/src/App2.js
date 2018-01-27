@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import Products from './Products';
 // import Rating from './Rating';
-import {Button} from 'react-bootstrap';
+// import {Button} from 'react-bootstrap';
 
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -15,12 +15,12 @@ class App extends Component {
 
     render() {
 
-        const user = {
-            firstName:'Greg',
-            lastName:'Lim'
-        };
+        // const user = {
+        //     firstName:'Greg',
+        //     lastName:'Lim'
+        // };
 
-        const isValid = true;
+        // const isValid = true;
 
         return (
             <div className="App">
