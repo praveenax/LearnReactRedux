@@ -96,7 +96,7 @@ class Products extends Component{
                 </ul>
                 }
 
-                {listProducts.length == 0 &&
+                {listProducts.length === 0 &&
                     <ul style={divStyle} >
                        <h3> No Products to display! </h3>
                     </ul>
