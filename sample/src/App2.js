@@ -24,15 +24,15 @@ class App extends Component {
 
         return (
             <div className="App">
-                <h1>Hello, {this.formatName(user)}</h1>
-                <Products />
+                {/* <h1>Hello, {this.formatName(user)}</h1> */}
+                {/* <Products /> */}
                 <Rating rating="1"></Rating>
                 <Rating rating="2"></Rating>
                 <Rating rating="3"></Rating>
                 <Rating rating="4"></Rating>
                 <Rating rating="5"></Rating>
                 
-                <Button bsStyle="primary" disabled="{!isValid}">Default</Button>
+                {/* <Button bsStyle="primary" disabled="{!isValid}">Default</Button> */}
                 
                 
                     
