@@ -61,7 +61,7 @@ class Products extends Component{
                 <h2>
                     Products
                 </h2>
-                <ul>
+                <ul style={divStyle} >
                     {listProducts}
                 </ul>
             </div>
@@ -70,3 +70,8 @@ class Products extends Component{
 }
 
 export default Products;
+
+var divStyle = {
+    width:'50%',
+    margin:'auto'
+}
