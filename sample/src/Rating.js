@@ -12,16 +12,15 @@ class Rating extends Component{
     }
 
     handleClick(ratingValue){
-        console.log(ratingValue);
-        console.log("test");
+        
         
         this.setState({rating:ratingValue});
     }
 
     render(){
         return(
-            <div>
-                <h4>Rating: {this.state.rating} </h4>
+            <div style={styles.starStyle} >
+                {/* <h4>Rating: {this.state.rating} </h4> */}
                 <h3>
                     <Glyphicon glyph={this.state.rating >= 1? "star":"star-empty"} onClick={this.handleClick.bind(this,1)} />
                     <Glyphicon glyph={this.state.rating >= 2 ? "star" : "star-empty"} onClick={this.handleClick.bind(this, 2)} />
@@ -38,3 +37,9 @@ class Rating extends Component{
 }
 
 export default Rating;
+
+const styles = {
+    starStyle:{
+        color:'orange'
+    }
+}
