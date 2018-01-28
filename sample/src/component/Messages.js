@@ -15,12 +15,14 @@ class Messages extends Component {
     componentDidMount() {
 
         console.log("CDM");
-        firebase.database().ref().child('messages').child('+919840303269').on('value', snapshot => {
+        // firebase.database().ref().child('messages').child('+919840303269').on('value', snapshot => {
+            firebase.database().ref().child('messages').child('+919901880718').on('value', snapshot => {
+            
 
             var messageData = snapshot.val();
 
             console.log(messageData);
-            console.log(messageData['messages']);
+            // console.log(messageData['messages']);
 
             console.log(snapshot.val());
             let returnArr = [];
@@ -36,6 +38,8 @@ class Messages extends Component {
                     
                     returnArr.push(messageData[i]);
                 }
+
+                
             }
             
 
