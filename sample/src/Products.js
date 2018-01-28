@@ -81,9 +81,6 @@ class Products extends Component{
         const listProducts = this.populateList(this.products);
         // const listProducts = [];
         
-
-
-
         return(
             <div>
                 <h2>
