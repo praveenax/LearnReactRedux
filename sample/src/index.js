@@ -7,6 +7,8 @@ import registerServiceWorker from './registerServiceWorker';
 // import App from './App3';
 // import App from './App4';
 import App from './App5';
+// import App from './App6';
+
 import * as firebase from 'firebase';
 
 // sample database
@@ -28,6 +30,8 @@ var config = {
     storageBucket: "sms-notifier-8a1d7.appspot.com",
     messagingSenderId: "753113351448"
 };
+
+
 firebase.initializeApp(config);
 
 
